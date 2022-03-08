@@ -81,14 +81,32 @@
 		    <div class="container">
 			    <article class="docs-article" id="section-1">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 3rd of March 2022</span></h1>
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 9th of March 2022</span></h1>
 					    <section class="docs-intro">
-						    <p>
-						    ARLO is a Python library for automated reinforcement learning. 
-							</p>
+						    <p>ARLO: Automated Reinforcement Learning Optimizer, is a Python library for automated reinforcement learning.</p>
+ 							<p>ARLO is built on top of <a href="https://github.com/MushroomRL/mushroom-rl"> MushroomRL </a> which is a Python library for Reinforcement Learning. 
+ 							</p>
+
  							<p>
-						    ARLO is built on top of <a href="https://github.com/MushroomRL/mushroom-rl"> MushroomRL </a> which is a Python library for Reinforcement Learning.
+ 							   In ARLO the most general offline and online RL pipelines are the ones represented below:
+ 							   <div class="col-12 col-md-6 mx-auto">
+						        <a href="assets/images/pipelines.png"><img class="figure-img img-fluid shadow rounded mx-auto" src="assets/images/pipelines.png" alt="" title="The ARLO pipelines"/></a>
+								</div>
+ 							   In ARLO a pipeline is made up of stages and each stage can be run with a fixed set of hyper-paramters or it can be an automatic stage in 
+							   which the hyper-paramters are tuned.
 							</p>
+							<p> 
+							Moreover it is also possible to have an automatic pipeline in which all the hyper-paramters of all the stages making up the pipeline are tuned.
+							</p>
+							<p>
+							Custom algorithms can be used in any stage for any purpose (algorithm, metric, tuner, environment, and so on, and so forth).
+ 							</p>
+ 							<p>
+ 							Other than the implementation of the ARLO framework and of specific stages, the library offers several other capabilities, such as saving and loading of objects, performance plots and the creation of heatmaps showcasing the impact of pairs of hyper-parameters on the peformance of the optimal configuration obtained in a Tunable Unit of an Automatic Unit. 
+ 							</p>
+ 							<p>
+ 							These heatmaps are created at the end of every Tunable Unit, with <a href="https://plotly.com"> Plotly </a> and are also interactive. An example can be seen <a href="https://https://github.com/arlo-lib/arlo-lib/plotly_heatmap_example.html"> here </a>. 
+ 							</p>
  						</section><!--//docs-intro-->
 													
 				   <!--  </header>
@@ -172,9 +190,8 @@
 				    <header class="docs-header">
 					    <h1 class="docs-heading">APIs</h1>
 					    <section class="docs-intro">
-						    <p>The entire library is documented and the documantion is on the the GitHub page of <a href="https://github.com/arlo-lib/ARLO/blob/main/resources/ARLO_documentation.pdf"> ARLO</a>.
-						 
-						    <p>The library tries to follow the classical <strong class="me-1">scikit-learn</strong>interface style. </p>
+						    <p>The entire library is documented and the documantion is on the the GitHub page of <a href="https://github.com/arlo-lib/ARLO/blob/main/resources/ARLO_documentation.pdf"> ARLO</a>.</p>						 
+						    <p>The library tries to follow the classical <strong class="me-1">scikit-learn</strong>interface style.</p>
 						  <!--   Below you can find some explanation and some code example to the units making up the library.</p> -->
 						</section><!--//docs-intro-->
 				    </header>
